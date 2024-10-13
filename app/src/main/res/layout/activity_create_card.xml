@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateCard">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/imm"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="359dp"
+        android:layout_height="83dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="288dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal"
+        android:text="Enter Details"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/create_priority"
+        android:layout_width="375dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:hint="Priority"
+        android:padding="15dp"
+        android:textColor="@color/TextColour"
+        android:textColorHint="@color/TextColour"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/create_title"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <EditText
+        android:id="@+id/create_title"
+        android:layout_width="375dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:hint="Enter Task"
+        android:padding="15dp"
+        android:textColor="@color/TextColour"
+        android:textColorHint="#064678"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="254dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="@color/TextColour"
+        android:text="S A V E"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <Button
+        android:id="@+id/All_Tasks"
+        android:layout_width="254dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="@color/TextColour"
+        android:text="ALL TASKS"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
